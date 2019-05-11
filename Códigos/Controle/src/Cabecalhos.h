@@ -1,0 +1,1 @@
+void enviar(String dado);
