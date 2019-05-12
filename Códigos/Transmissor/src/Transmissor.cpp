@@ -12,15 +12,17 @@
 // ------------------------------------------------------------------------------------ //
 
 #include <Arduino.h>
-#include "Cabecalhos.h"
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 
 // ------------------------------------------------------------------------------------ //
 
+void enviar(String dado);
+
+// ------------------------------------------------------------------------------------ //
+
 const char* ssid     = "LUIZ ANTONIO";
 const char* password = "RITA@LEMOS";
-
 
 String mensagem = "";
 
