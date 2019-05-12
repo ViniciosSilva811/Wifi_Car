@@ -3,7 +3,7 @@
 |                                                                                        |
 |                                                                                        |
 |                                                                                        |
-|                            Código para a antena do controle                            |
+|                                  Código do Transmissor                                 |
 |                                                                                        |
 |                                                                                        |
 |                                                                                        |
@@ -33,6 +33,8 @@ HTTPClient url;
 // --------------------------------------- SETUP -------------------------------------- //
 
 void setup() {
+	Serial.begin(115200);
+	
 	WiFi.mode(WIFI_STA);
 	WiFi.begin(ssid, password);
 
@@ -40,7 +42,6 @@ void setup() {
 		delay(500);
 	}
 
-	Serial.begin(115200);
 }
 
 // --------------------------------------- LOOP --------------------------------------- //
