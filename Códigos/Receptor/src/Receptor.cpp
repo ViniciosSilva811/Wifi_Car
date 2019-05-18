@@ -67,4 +67,5 @@ void tratar_requisicoes() {
 void buscar_por_requisicoes() {
 	servidor.handleClient();
 }
+
 // ------------------------------------------------------------------------------------ //
