@@ -21,8 +21,8 @@ void enviar(String dado);
 
 // ------------------------------------------------------------------------------------ //
 
-const char* ssid     = "LUIZ ANTONIO";
-const char* password = "RITA@LEMOS";
+const char* ssid     = "Receptor";
+const char* password = "b2de12a7_2kjda95fbdfa61Wr-";
 
 String mensagem = "";
 
@@ -57,7 +57,7 @@ void loop() {
 // ------------------------------------------------------------------------------------ //
 
 void enviar(String dado) {
-	url.begin("http://10.0.1.9:5000/" + dado);
+	url.begin("http://10.0.1.9:5000/?comando=" + dado);
 	url.GET();
 	url.end();
 }
